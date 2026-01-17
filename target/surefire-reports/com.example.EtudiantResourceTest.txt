@@ -1,0 +1,58 @@
+-------------------------------------------------------------------------------
+Test set: com.example.EtudiantResourceTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 3, Time elapsed: 13.514 s <<< FAILURE! - in com.example.EtudiantResourceTest
+testUpdateEtudiant  Time elapsed: 0.031 s  <<< ERROR!
+java.lang.RuntimeException: 
+java.lang.RuntimeException: io.quarkus.builder.BuildException: Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.amazon.common.deployment.AmazonServicesClientsProcessor#setup threw an exception: jakarta.enterprise.inject.spi.DeploymentException: Missing 'software.amazon.awssdk:url-connection-client' dependency on the classpath
+	at io.quarkus.amazon.common.deployment.AmazonServicesClientsProcessor.missingDependencyException(AmazonServicesClientsProcessor.java:165)
+	at io.quarkus.amazon.common.deployment.AmazonServicesClientsProcessor.setup(AmazonServicesClientsProcessor.java:123)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:909)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:282)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1538)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+
+Caused by: java.lang.RuntimeException: 
+io.quarkus.builder.BuildException: Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.amazon.common.deployment.AmazonServicesClientsProcessor#setup threw an exception: jakarta.enterprise.inject.spi.DeploymentException: Missing 'software.amazon.awssdk:url-connection-client' dependency on the classpath
+	at io.quarkus.amazon.common.deployment.AmazonServicesClientsProcessor.missingDependencyException(AmazonServicesClientsProcessor.java:165)
+	at io.quarkus.amazon.common.deployment.AmazonServicesClientsProcessor.setup(AmazonServicesClientsProcessor.java:123)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:909)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:282)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1538)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+
+Caused by: io.quarkus.builder.BuildException: 
+Build failure: Build failed due to errors
+	[error]: Build step io.quarkus.amazon.common.deployment.AmazonServicesClientsProcessor#setup threw an exception: jakarta.enterprise.inject.spi.DeploymentException: Missing 'software.amazon.awssdk:url-connection-client' dependency on the classpath
+	at io.quarkus.amazon.common.deployment.AmazonServicesClientsProcessor.missingDependencyException(AmazonServicesClientsProcessor.java:165)
+	at io.quarkus.amazon.common.deployment.AmazonServicesClientsProcessor.setup(AmazonServicesClientsProcessor.java:123)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.deployment.ExtensionLoader$3.execute(ExtensionLoader.java:909)
+	at io.quarkus.builder.BuildContext.run(BuildContext.java:282)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1538)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:501)
+
+Caused by: jakarta.enterprise.inject.spi.DeploymentException: Missing 'software.amazon.awssdk:url-connection-client' dependency on the classpath
+
