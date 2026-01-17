@@ -1,31 +1,31 @@
-# 🎓 Student CRUD – Application de Gestion des Étudiants
+# 🎓 Student CRUD – Application Quarkus de Gestion des Étudiants
 
 ##  Description
-**Student CRUD** est une application permettant la gestion des étudiants à travers les opérations fondamentales **CRUD** : création, consultation, mise à jour et suppression.  
-Ce projet a été réalisé dans un objectif pédagogique afin de consolider les compétences en **développement applicatif**, structuration du code et interaction avec les données.
+**Student CRUD** est une application backend développée avec **Quarkus**, permettant la gestion des étudiants à travers les opérations fondamentales **CRUD** : création, consultation, mise à jour et suppression.
 
-L’application illustre une architecture claire et une logique métier simple, adaptée aux besoins d’un système de gestion académique de base.
+Ce projet a été réalisé dans un cadre pédagogique afin de renforcer les compétences en **développement backend Java**, en utilisant un framework moderne, performant et cloud-native.  
+L’application repose sur une architecture claire et met en œuvre les bonnes pratiques du développement d’API REST.
 
 ---
 
 ##  Fonctionnalités
-- Ajouter un nouvel étudiant
-- Afficher la liste des étudiants
-- Modifier les informations d’un étudiant
-- Supprimer un étudiant
+- Création d’un étudiant
+- Consultation de la liste des étudiants
+- Mise à jour des informations d’un étudiant
+- Suppression d’un étudiant
+- Exposition des fonctionnalités via des **API REST**
 - Validation des données
-- Interface simple et intuitive
 
 ---
 
 ##  Technologies utilisées
-*(à adapter selon ton projet exact si besoin)*
-
-- **Langage principal** : Java / C# / JavaScript  
-- **Framework** : Spring Boot / .NET / JavaScript Vanilla  
-- **Base de données** : MySQL / PostgreSQL / SQLite  
-- **Architecture** : MVC  
-- **Outils** : Git, GitHub
+- **Langage** : Java  
+- **Framework** : **Quarkus**
+- **API** : REST (JAX-RS)
+- **Base de données** : PostgreSQL / MySQL (selon configuration)
+- **ORM** : Hibernate ORM / Panache
+- **Architecture** : RESTful / MVC
+- **Outils** : Git, GitHub, Maven
 
 ---
 
